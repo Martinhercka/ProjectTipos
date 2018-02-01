@@ -51,14 +51,7 @@ public class Tipos
 
     }
 
-    public void print()
-    {
 
-        for(int i=0;i<arr.length;i++)
-        {
-            System.out.print(arr[i]+" ");
-        }
-    }
 
 
     public void print()
@@ -72,7 +65,16 @@ public class Tipos
 
     public void printNewBet(List<Bet> list)
     {
-        if (list!=null || list )
+        if (list!=null || list.size()==0 )
+            System.out.println("No bets");
+        else
+        {
+            for(Bet temp:list)
+            {
+                System.out.println("Bet: "+temp.getId()+" "+temp.getDate()+" "+temp.getIduser());
+                System.out.println("   > "+temp.getBet1()+" "+temp.getBet2()+" "+temp.getBet3()+" "+temp.getBet4()+" "+temp.getBet5()+" <");
+            }
+        }
 
 
     }
