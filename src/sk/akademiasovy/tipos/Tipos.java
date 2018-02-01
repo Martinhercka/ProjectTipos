@@ -1,5 +1,6 @@
 package sk.akademiasovy.tipos;
 import java.util.Arrays;
+import java.util.List;
 import java.util.Random;
 public class Tipos
 {
@@ -58,4 +59,22 @@ public class Tipos
             System.out.print(arr[i]+" ");
         }
     }
+
+
+    public void print()
+    {
+        for (int k:arr)
+        {
+            System.out.println(k+" ");
+        }
+
+    }
+
+    public void printNewBet(List<Bet> list)
+    {
+        if (list!=null || list )
+
+
+    }
+
 }
